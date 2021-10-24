@@ -1,0 +1,104 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    /* width: 600px; */
+    font-family: roboto;
+    font-size: 12px;
+    border: 3px solid green;
+}
+
+p {
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.header {
+    background-color: yellow;
+    padding: 20px;
+    /* padding: 10px; */
+    text-align: center;
+}
+
+.hero {
+    padding: 80px;
+    /* padding: 40px; */
+    color: white;
+    background-color: lightseagreen;
+    text-align: center;
+}
+
+.site-title {
+    padding: 10px;
+}
+
+.nav {
+    display: flex;
+    height: 72px;
+     /* height: 36px; */
+    align-items: center;
+    background-color: black;
+}
+
+.link {
+    color: white;
+    padding: 0 8px;
+}
+
+.main {
+    display: flex;
+    /* height: 300px; */
+}
+
+.left {
+    flex: 1;
+    background-color: whitesmoke;
+    padding: 8px;
+}
+
+
+
+
+.right {
+    flex: 2;
+    background-color: white;
+    padding: 8px;
+}
+
+.right_item {
+    padding-bottom: 10px;
+}
+
+.title,
+.under_title {
+    font-weight: bold;
+    padding: 4px 0px;
+}
+
+.image {
+    background-color: grey;
+    padding: 5px;
+    margin-bottom: 5px;
+}
+
+.small_image {
+    height: 28px;
+     /* height: 14px; */
+}
+
+.big_image {
+    height: 120px;
+     /* height: 60px; */
+}
+
+
+.footer {
+    padding: 10px;
+    background-color: gainsboro;
+    text-align: center;
+    font-weight: bold;
+}
