@@ -3,24 +3,34 @@
   padding: 0;
 }
 
+html {
+  height: 100%;
+}
+
+body {
+  height: 100%;
+}
+
 .wrap {
-  height: 1500px;
-  width: 610px;
+  height: 100%;
+  /* border: 2px solid green; */
   display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .fix {
   height: 600px;
   width: 600px;
   border: 3px solid red;
-  margin-top: 40px;
+  margin-top: 20px;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
   position: fixed;
-  top: 0;
-  left: 0;
+  top: center;
+  left: center%;
 }
 
 .box {
@@ -35,13 +45,13 @@
   height: 600px;
   width: 600px;
   border: 3px solid purple;
-  margin-top: 50px;
-  display: flex;
+   display: flex;
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
   position: absolute;
   bottom: -703px;
+  left: center;
 }
 
 .box_s {
