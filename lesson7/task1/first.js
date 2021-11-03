@@ -215,7 +215,8 @@
 // отримали результат - Uncaught ReferenceError: Null is not defined at first.js:212 
 // До чогось не визначеного дії провести неможемо. Якщо було б null + 1, то отримали б 1
 
-// console.log(Undefined + 1  )
+// console.log(Undefined + 1)
 // // отримали результат - Uncaught ReferenceError: Undefined is not defined at first.js:215 
+// Якщо б було undefined + 1, отримали б  NaN бо невідомо що "прилеть" в undefined 
 // До чогось не ініціалізованого дії провести неможемо
 
