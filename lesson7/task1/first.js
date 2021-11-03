@@ -1,55 +1,55 @@
 // // let
-// let Some_number = 10;
-// console.log(
-//   "This is some variable of number type-",
-//   Some_number,
-//   typeof Some_number
-// )
+let Some_number = 10;
+console.log(
+  "This is some variable of number type-",
+  Some_number,
+  typeof Some_number
+)
 
-// let Some_string = "Lorem ipsum dolor sit amet.";
-// console.log(
-//   "This is some variable of string type-",
-//   Some_string,
-//   typeof Some_string
-// )
+let Some_string = "Lorem ipsum dolor sit amet.";
+console.log(
+  "This is some variable of string type-",
+  Some_string,
+  typeof Some_string
+)
 
-// let Some_boolean = true;
-// console.log(
-//   "This is some variable of boolean type-",
-//   Some_boolean,
-//   typeof Some_boolean
-// )
+let Some_boolean = true;
+console.log(
+  "This is some variable of boolean type-",
+  Some_boolean,
+  typeof Some_boolean
+)
 
-// let Some_null = null;
-// console.log("This is some Null value-", Some_null, typeof Some_null);
+let Some_null = null;
+console.log("This is some Null value-", Some_null, typeof Some_null);
 
-// let Some_undefined;
-// console.log(
-//   "This is some variable of undefined type-",
-//   Some_undefined,
-//   typeof Some_undefined
-// )
+let Some_undefined;
+console.log(
+  "This is some variable of undefined type-",
+  Some_undefined,
+  typeof Some_undefined
+)
 
-// let Some_object = {};
-// console.log(
-//   "This is some variable of object type-",
-//   Some_object,
-//   typeof Some_object
-// )
+let Some_object = {};
+console.log(
+  "This is some variable of object type-",
+  Some_object,
+  typeof Some_object
+)
 
-// let id = Symbol();
-// console.log(
-//   'This is some symbol with "function type" -',
-//   Symbol,
-//   typeof Symbol
-// )
+let id = Symbol();
+console.log(
+  'This is some symbol with "function type" -',
+  Symbol,
+  typeof Symbol
+)
 
-// let Big_integer = 2n;
-// console.log(
-//   "This is some variable of bigint type-",
-//   Big_integer,
-//   typeof Big_integer
-// )
+let Big_integer = 2n;
+console.log(
+  "This is some variable of bigint type-",
+  Big_integer,
+  typeof Big_integer
+)
 
 // // ______________________________________________________________________________
 // // var
