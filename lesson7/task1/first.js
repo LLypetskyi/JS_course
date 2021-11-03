@@ -211,9 +211,9 @@
 // console.log ('2px' - 1); 
 // отримали результат - NaN. Оскільки не вдалося перевести стрінгу '2px' до типу number, то і математичну дію виконати неможливо
 
-// console.log( Null + 1); 
+// console.log(Null + 1); 
 // отримали результат - Uncaught ReferenceError: Null is not defined at first.js:212 
-// До чогось не визначеного дії провести неможемо
+// До чогось не визначеного дії провести неможемо. Якщо було б null + 1, то отримали б 1
 
 // console.log(Undefined + 1  )
 // // отримали результат - Uncaught ReferenceError: Undefined is not defined at first.js:215 
