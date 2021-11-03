@@ -194,8 +194,9 @@
 
 // console.log(' '- 1 + 0); 
 // в результаті ми отримали число  -1. Операція "віднімання" зі стрінгою не працює
- //console.log ((' '2' * '3'));  
+//  console.log ((' '2' * '3'));  
  // first.js:197 Uncaught SyntaxError: Unexpected number - ми не можемо переммножувати стрінги
+// Якщо було б '2'*'3' - це дало б число 6
 
 // console.log ((' 2 + 2 + 'px'));  
 // Uncaught SyntaxError: Unexpected identifier
