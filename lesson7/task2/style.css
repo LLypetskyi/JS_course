@@ -1,0 +1,119 @@
+body {
+  background-color: steelblue;
+}
+
+/* .wrap {
+  height: 600px;
+  width: 600px;
+  border: 2px solid red;
+  padding: 5px;
+} */
+
+.squere {
+  height: 180px;
+  width: 180px;
+  border: 2px solid black;
+}
+
+.one {
+  background-color: darkgray;
+  position: relative;
+  top: 10px;
+  left: 10px;
+}
+
+.two {
+  background-color: darkslategray;
+  position: absolute;
+  top: 30px;
+  left: 30px;
+}
+
+.three {
+  background-color: dimgray;
+  position: absolute;
+  top: 45px;
+  left: 45px;
+}
+.four {
+  background-color: darkslategray;
+  position: absolute;
+  top: 60px;
+  left: 60px;
+}
+.five {
+  background-color: lightgray;
+  position: absolute;
+  top: 75px;
+  left: 75px;
+}
+.six {
+  background-color: steelblue;
+  position: absolute;
+  top: 90px;
+  left: 90px;
+}
+
+.seven {
+  background-color: darkolivegreen;
+  position: absolute;
+  top: 105px;
+  left: 105px;
+}
+.eight {
+  background-color: black;
+  position: absolute;
+  top: 120px;
+  left: 120px;
+}
+.nine {
+  background-color: olivedrab;
+  position: absolute;
+  top: 135px;
+  left: 135px;
+}
+.ten {
+  background-color: darkslategray;
+  position: absolute;
+  top: 150px;
+  left: 150px;
+}
+.eleven {
+  background-color: peru;
+  position: absolute;
+  top: 165px;
+  left: 165px;
+}
+.twelve {
+  background-color: darkslategray;
+  position: absolute;
+  top: 180px;
+  left: 180px;
+}
+.thirteen {
+  background-color: darkolivegreen;
+  position: absolute;
+  top: 195px;
+  left: 195px;
+}
+
+.fourteen {
+  background-color: rosybrown;
+  position: absolute;
+  top: 210px;
+  left: 210px;
+}
+.fifteen {
+  background-color: forestgreen;
+  position: absolute;
+  top: 225px;
+  left: 225px;
+}
+
+.squere:hover {
+    z-index: 1;
+    height: 200px;
+    width: 200px;
+    box-shadow: 5px 5px 5px 1px white;
+   
+}
