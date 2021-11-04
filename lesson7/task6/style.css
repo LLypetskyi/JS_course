@@ -4,33 +4,42 @@ html {
 
 body {
   height: 100%;
-  background: url(./image/1.jpg);
-  }
+  background: url(./image/2.jpg);
+}
 
 .header {
   font-size: 29px;
   text-align: center;
   padding: 30px;
+  color: white;
 }
 
 .nav {
   height: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: 15%;
+}
+
+a {
+  color: slateblue;
+  text-decoration: none;
 }
 
 .nav_item {
   height: 40px;
-  width: 70px;
-  border: 2px solid greenyellow;
-  background-color:skyblue;
+  width: 120px;
+  border: 2px solid slateblue;
+  background-color: lightskyblue;
   text-align: center;
   padding: 20px;
   margin: 15px;
+  border-radius: 12px;
   box-shadow: 5px 5px 5px 1px rgb(255, 255, 255, 0.6);
 }
 
 .nav_item:hover {
   z-index: 1;
   height: 50px;
-  width: 80px;
+  width: 140px;
 }
- 
