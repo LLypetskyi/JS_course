@@ -10,7 +10,7 @@ body {
 .header {
   font-size: 29px;
   text-align: center;
-  padding: 30px;
+  margin-top: 10%;
   color: white;
 }
 
@@ -30,7 +30,7 @@ a {
   height: 40px;
   width: 120px;
   border: 2px solid slateblue;
-  background-color: lightskyblue;
+  background-color: mintcream;
   text-align: center;
   padding: 20px;
   margin: 15px;
