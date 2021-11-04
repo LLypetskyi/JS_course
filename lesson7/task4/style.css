@@ -1,0 +1,33 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  height: 100%;
+  background-color: steelblue;
+}
+
+.wrapper {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.cub {
+  height: 100px;
+  width: 170px;
+  border: 2px solid black;
+  margin: 5px;
+}
+
+.cub:hover {
+  z-index: 1;
+  height: 200px;
+  width: 340px;
+}
