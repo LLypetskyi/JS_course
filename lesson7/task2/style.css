@@ -12,7 +12,9 @@ body {
 .squere {
   height: 180px;
   width: 180px;
+  transition: initial;
   border: 2px solid black;
+  box-shadow: 4px 4px 4px 1px rgba(17, 17, 17, 0.4);
 }
 
 .one {
