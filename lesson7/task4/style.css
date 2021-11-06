@@ -9,7 +9,9 @@ html {
 
 body {
   height: 100%;
-  background-color: steelblue;
+  background: -webkit-linear-gradient(90deg,rgb(51, 68, 85), rgb(85, 170, 187));
+  background: -moz-linear-gradient(90deg, rgb(51, 68, 85), rgb(85, 170, 187));
+  background: linear-gradient(90deg, rgb(51, 68, 85), rgb(85, 170, 187));
 }
 
 .wrapper {
@@ -18,7 +20,7 @@ body {
   align-items: center;
   justify-content: center;
   transition: all;
-  }
+}
 
 .cub {
   height: 100px;

@@ -1,5 +1,8 @@
 body {
-  background-color: steelblue;
+   height: 100%;
+   background: -webkit-linear-gradient(90deg, rgb(51, 68, 85), rgb(85, 170, 187));
+   background: -moz-linear-gradient(90deg, rgb(51, 68, 85), rgb(85, 170, 187));
+   background: linear-gradient(90deg, rgb(51, 68, 85), rgb(85, 170, 187));
 }
 
 /* .wrap {
