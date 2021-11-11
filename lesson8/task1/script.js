@@ -11,3 +11,4 @@ if (num === '787898') {
 // OR
 
 num === '787898' ? console.log("Your password is right") : console.log("Wrong password");
+

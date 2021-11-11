@@ -29,11 +29,39 @@
 // Микита
 // Посторонім вхід заборонено, коронавірус
 
+// Варіант №1 IF / ELSE
+
+// const isName = prompt("Як Вас звати ? P.S. З великої букви");
+// if (isName === "Ігор" || isName === "Сергій") {
+//   alert("Привіт адмін " + isName);
+// } else if (isName === "Паша") {
+//   alert("Привіт хворий " + isName);
+// } else if (isName === "Оля" || isName === "Оксана") {
+//   alert("вітання Вам, " + isName);
+// } else alert(isName + " ,посторонім вхід заборонено, коронавірус!");
+
+// Варіант №2 SWITCH
+
 const isName = prompt("Як Вас звати ? P.S. З великої букви");
-if (isName === "Ігор" || isName === "Сергій") {
-  alert("Привіт адмін " + isName);
-} else if (isName === "Паша") {
-  alert("Привіт хворий " + isName);
-} else if (isName === "Оля" || isName === "Оксана") {
-  alert("вітання Вам, " + isName);
-} else alert(isName + " ,посторонім вхід заборонено, коронавірус!");
+
+switch (isName) {
+  case "Ігор":
+  case "Сергій": {
+    alert("Привіт адмін " + isName);
+    break;
+  }
+
+  case "Оля":
+  case "Оксана": {
+    alert("вітання вам " + isName);
+    break;
+  }
+  case "Паша": {
+    alert("привіт хворий " + isName);
+    break;
+  }
+
+  default: {
+    alert(isName + ", посторонім вхід заборонено, коронавірус!");
+  }
+}
