@@ -19,11 +19,35 @@
 // 22
 // ‘22  столи’
 
+// const isNum = prompt("Введіть натуральне число, більше ніж нуль");
+// if (isNum >= 0) {
+//   if (isNum != 11 && (isNum === 1 || isNum % 10 === 1)) {
+//     console.log(isNum + " стіл");
+//   } else if (
+//     (isNum >= 2 && isNum <= 4) ||
+//     (isNum % 10 >= 2 &&
+//       isNum % 10 <= 4 &&
+//       isNum != 12 &&
+//       isNum != 13 &&
+//       isNum != 14)
+//   ) {
+//     console.log(isNum + " столи");
+//   } else console.log(isNum + " столів");
+// } else alert("Введіть натуральне число, більше ніж нуль ");
+
+
 const isNum = prompt("Введіть натуральне число, більше ніж нуль");
 if (isNum >= 0) {
-    if (isNum != 11 && (isNum === 1 || isNum % 10 === 1)) {
-        console.log(isNum + " стіл");
-    } else if ((isNum >= 2 && isNum <= 4) || (isNum % 10 >= 2 && isNum % 10 <= 4 && isNum != 12 && isNum != 13 && isNum != 14)) {
-        console.log(isNum + " столи");
-    } else console.log(isNum + " столів");
+  if (isNum != 11 && (isNum === 1 || isNum % 10 === 1)) {
+    console.log(isNum + " стіл");
+  } else if (
+    (isNum > 1 && isNum < 5) ||
+    (isNum % 10 > 1 &&
+      isNum % 10 < 5 &&
+      isNum != 12 &&
+      isNum != 13 &&
+      isNum != 14)
+  ) {
+    console.log(isNum + " столи");
+  } else console.log(isNum + " столів");
 } else alert("Введіть натуральне число, більше ніж нуль ");
