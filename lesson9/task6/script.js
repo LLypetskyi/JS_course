@@ -6,9 +6,9 @@ let lineStar = "";
 let resLine = "";
 
 for (let i = 1; i <= size; i++) {
-  line = line + " ";
+  line += " ";
   for (let j = size; j >= i; j--) {
-    lineStar = lineStar + "*";
+    lineStar += "*";
   }
   resLine = line + lineStar;
   console.log(resLine);

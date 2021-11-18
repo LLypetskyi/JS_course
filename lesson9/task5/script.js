@@ -6,10 +6,10 @@ let lineEmpty = "";
 let resLine = "";
 
 for (let i = 1; i <= size; i++) {
-  lineStar = lineStar + "*";
+  lineStar += "*";
 
   for (let j = 9; j >= i; j--) {
-    lineEmpty = lineEmpty + " ";
+    lineEmpty += " ";
   }
   resLine = lineEmpty + lineStar;
   console.log(resLine);

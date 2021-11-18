@@ -6,7 +6,7 @@ let Size = 10;
 for (let i = 1; i <= Size; i++) {
   let rezString = "";
   for (let j = 1; j <= i; j++) {
-    rezString = rezString + "*";
+    rezString += "*";
   }
   console.log(rezString);
 }
@@ -18,6 +18,6 @@ console.log("------------2 version---------------");
 let size = 10;
 let rezString = "";
 for (let i = 1; i <= size; i++) {
-  rezString = rezString + "*";
+  rezString += "*";
   console.log(rezString);
 }

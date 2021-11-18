@@ -15,7 +15,7 @@ let Size = 10;
 for (let i = 1; i <= Size; i++) {
   let rezString = "";
   for (let j = 1; j <= Size; j++) {
-    rezString = rezString + "*";
+    rezString += "*";
   }
   console.log(rezString);
 }
