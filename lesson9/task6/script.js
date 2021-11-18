@@ -1,3 +1,5 @@
+// task6
+
 let size = 10;
 let line = "";
 let lineStar = "";

@@ -1,4 +1,3 @@
-
 let size = 10;
 for (let i = 1; i <= size; i++) {
   let rezString = "";
@@ -7,4 +6,3 @@ for (let i = 1; i <= size; i++) {
   }
   console.log(rezString);
 }
-

@@ -1,9 +1,6 @@
-// За допомогою циклів вивести фігуру - трикутник 10 x 10 - в консоль:
-// Очікуваний результат (скрін з консолі):
-
 // 1 version
 
-console.log ("------------1 version---------------");
+console.log("------------1 version---------------");
 
 let Size = 10;
 for (let i = 1; i <= Size; i++) {
@@ -16,7 +13,7 @@ for (let i = 1; i <= Size; i++) {
 
 // 2 version
 
-console.log ("------------2 version---------------");
+console.log("------------2 version---------------");
 
 let size = 10;
 let rezString = "";

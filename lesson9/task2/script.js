@@ -1,13 +1,13 @@
 // 1 version
 
-console.log ("------------1 version---------------");
+console.log("------------1 version---------------");
 let size = 10;
 let rezString = "**********";
 for (let i = 1; i <= size; i++) {
   console.log(rezString);
 }
 
-console.log ("------------2 version---------------");
+console.log("------------2 version---------------");
 
 // 2 version
 
