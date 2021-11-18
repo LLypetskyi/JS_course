@@ -3,7 +3,6 @@
 
 
 let size = 10;
-// let rezString="";
 for (let i = 1; i <= size; i++) {
   let rezString = "";
   for (let j = 10; j >= i; j--) {
@@ -11,3 +10,6 @@ for (let i = 1; i <= size; i++) {
   }
   console.log(rezString);
 }
+
+
+
