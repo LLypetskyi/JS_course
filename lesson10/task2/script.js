@@ -41,5 +41,5 @@ return rezOfDegree;
 }
 
 console.log ('Результат множення двох чисел 12 та 14 - ' + multTwoNum (12, 14));
-console.log ('Результат множення трьох чисел 12, 14 та 100 - ' + multThreeNum (22, 66, 100));
+console.log ('Результат множення трьох чисел 12, 14 та 100 - ' + multThreeNum (12, 14, 100));
 console.log ('3 в степені 4 = ' + elevationDegree (3, 4));
