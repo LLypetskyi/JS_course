@@ -1,9 +1,9 @@
 
 
 let size = 6;
-// let i = 0;
+let i = 0;
 
-while (i <= size) {
+while (i < size) {
   lineEmpty = "";
   lineStar = "";
   for (let j = 0; j < size - i; j++) lineEmpty += " ";
