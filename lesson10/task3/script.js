@@ -5,15 +5,15 @@
 console.log(" ---------function declaration -------");
 
 function sayYes() {
-  alert("Прошу проходити!");
+  alert("Please pass!");
 }
 
 function sayNo() {
-  alert("Можливо, молока ?");
+  alert("Maybe milk?");
 }
 
 function question(sayYes, sayNo) {
-  let answer = confirm("Ви повнолітні ?");
+  let answer = confirm("Are you an adult ?");
   if (answer) {
     sayYes();
   } else {
@@ -26,15 +26,15 @@ question(sayYes, sayNo);
 console.log(" ---------function expression -------");
 
 let userSayYes = function sayYes() {
-  alert("Прошу проходити!");
+  alert("Please pass!");
 }
 
 let userSayNo = function sayNo() {
-  alert("Можливо, молока ?");
+  alert("Maybe milk?");
 }
 
 let userAnswer = function question(sayYes, sayNo) {
-  let answer = confirm("Ви повнолітні ?");
+  let answer = confirm("Are you an adult ?");
   if (answer) {
     userSayYes();
   } else {
