@@ -5,39 +5,33 @@
 console.log(" ---------function declaration -------");
 
 function multTwoNumbers (firstArg, secondArg){
-  let rezOfMultiplication = firstArg * secondArg;
-  return rezOfMultiplication;
+  return firstArg * secondArg;
   }
 
 function multThreeNumbers(firstArg, secondArg, thirdArg){
-  let rezOfMultiplication = firstArg * secondArg * thirdArg;
-  return rezOfMultiplication;
+  return firstArg * secondArg * thirdArg;
 }
 
-function degree (firstArg, secondArg){
-let rezOfDegree = Math.pow(firstArg, secondArg);
-return rezOfDegree;
+function calcDegree (firstArg, secondArg){
+return  Math.pow(firstArg, secondArg);
 }
 
 console.log ('Результат множення двох чисел 22 та 66 - ' + multTwoNumbers(22, 66));
 console.log ('Результат множення трьох чисел 22, 66 та 100 - ' + multThreeNumbers(22, 66, 100));
-console.log ('2 в степені 3 = ' + degree(2, 3));
+console.log ('2 в степені 3 = ' + calcDegree(2, 3));
 
 console.log(" ---------function expression -------");
 
 let multTwoNum = function multTwoNumbers (firstArg, secondArg){
-  let rezOfMultiplication = firstArg * secondArg;
-  return rezOfMultiplication;
+  return firstArg * secondArg;
   }
 
 let multThreeNum = function multThreeNumbers(firstArg, secondArg, thirdArg){
-  let rezOfMultiplication = firstArg * secondArg * thirdArg;
-  return rezOfMultiplication;
-}
+  return firstArg * secondArg * thirdArg;
+ }
 
 let elevationDegree = function degree (firstArg, secondArg){
-let rezOfDegree = Math.pow(firstArg, secondArg);
-return rezOfDegree;
+return  Math.pow(firstArg, secondArg);
 }
 
 console.log ('Результат множення двох чисел 12 та 14 - ' + multTwoNum (12, 14));
