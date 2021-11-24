@@ -9,7 +9,6 @@ console.log(" ---------function declaration -------");
 
 function chekAge(Age) {
   let userAge = prompt("How old are you?");
-
   if (userAge >= 18 && userAge < 99) {
     alert("You have passed the test");
   } else if (userAge < 18) {
@@ -20,14 +19,12 @@ function chekAge(Age) {
     alert("Is it you, Duncan MacLeod ?");
   } else alert("Please enter a numeric value");
 }
-
 chekAge();
 
 console.log(" ---------function expression -------");
 
 let chekAgeSecond = function chekAge(Age) {
   let userAge = prompt("How old are you?");
-
   if (userAge >= 18 && userAge < 99) {
     alert("You have passed the test");
   } else if (userAge < 18) {
@@ -37,7 +34,5 @@ let chekAgeSecond = function chekAge(Age) {
   } else if (userAge >= 120) {
     alert("Is it you, Duncan MacLeod ?");
   } else alert("Please enter a numeric value");
-}
-
+};
 chekAgeSecond();
-

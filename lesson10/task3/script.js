@@ -27,11 +27,11 @@ console.log(" ---------function expression -------");
 
 let userSayYes = function sayYes() {
   alert("Please pass!");
-}
+};
 
 let userSayNo = function sayNo() {
   alert("Maybe milk?");
-}
+};
 
 let userAnswer = function question(sayYes, sayNo) {
   let answer = confirm("Are you an adult ?");
@@ -40,6 +40,6 @@ let userAnswer = function question(sayYes, sayNo) {
   } else {
     userSayNo();
   }
-}
+};
 
 userAnswer();
