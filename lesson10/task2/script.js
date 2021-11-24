@@ -24,15 +24,15 @@ console.log(" ---------function expression -------");
 
 let multTwoNum = function multTwoNumbers (firstArg, secondArg){
   return firstArg * secondArg;
-  }
+  };
 
 let multThreeNum = function multThreeNumbers(firstArg, secondArg, thirdArg){
   return firstArg * secondArg * thirdArg;
- }
+ };
 
 let elevationDegree = function degree (firstArg, secondArg){
 return  Math.pow(firstArg, secondArg);
-}
+};
 
 console.log ('Результат множення двох чисел 12 та 14 - ' + multTwoNum (12, 14));
 console.log ('Результат множення трьох чисел 12, 14 та 100 - ' + multThreeNum (12, 14, 100));
