@@ -4,15 +4,13 @@
 
 let userNumber = +prompt("Please guess the number from 1 to 10");
 
-// let randNumber = 
+// let randNumber =
 function randomNumber() {
   let rez = Math.floor(Math.random() * 11);
-console.log("Сomputer selected number - " + rez);
-if (rez === userNumber) {
-  alert("Сongratulations! You guessed the number");
-} else alert("Unfortunately you didn't guess");
-};
+  console.log("Сomputer selected number - " + rez);
+  if (rez === userNumber) {
+    alert("Сongratulations! You guessed the number");
+  } else alert("Unfortunately you didn't guess");
+}
 
 randomNumber();
-
-
