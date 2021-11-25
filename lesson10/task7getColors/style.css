@@ -9,27 +9,39 @@ html {
 
 body {
   height: 100%;
- 
 }
 
 .wrapper {
   height: 100%;
   display: flex;
-  
   align-items: flex-start;
   justify-content: center;
-  }
-
-  .button {
-    border: 3px solid black;
-    padding: 10px;
-    margin: 20px;
-  }
-
-.cub {
-  height: 70px;
-  width: 140px;
-  border: 4px solid black;
-  margin: 5px;
 }
 
+.button {
+  height: 40px;
+  width: 80px;
+  border: 3px solid black;
+  padding: 10px;
+  margin: 40px;
+  corsor: pointer;
+}
+
+.cub {
+  height: 60px;
+  width: 140px;
+  border: 4px solid black;
+  margin: 15px;
+  background-color: none;
+}
+
+.wrapper {
+  background-color: white;
+
+}
+
+.cub:onclick {
+  width: 70px;
+  height: 74px;
+  background-color: rgb(35, 116, 187);
+}
