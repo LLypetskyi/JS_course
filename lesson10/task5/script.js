@@ -14,6 +14,4 @@ let getName = function sayHi() {
   let userName = prompt("What is your name?");
   alert("Glad to see you, " + userName);
 };
-// sayHi();
-
 getName();
