@@ -3,12 +3,18 @@
 // І після того комп'ютер показує який колір був вибраний
 
 const button = document.querySelector('button');
-let fon = document.querySelector('wrapper');
-// const colorCode = document.querySelector ('') Куди передавати код по "кліку по блоку"?;
+const fon = document.querySelector('wrapper');
+const element = document.getElementsByClassName('cub');
 
 button.addEventListener('click',() =>{
   let color = '#';
   color += Math.random().toString(16).slice(2,8);
   console.log(color);
-  fon.style.backgroundColor = color;
-})
+  for (let i=1; i<=element.length; i++){
+  element[i] = color;
+  }
+  });
+
+
+
+  // button.addEventListener("click", function(){ alert("Hello World!"); }); 
