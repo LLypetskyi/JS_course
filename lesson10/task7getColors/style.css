@@ -39,9 +39,3 @@ body {
   background-color: white;
 
 }
-
-.cub:onclick {
-  width: 70px;
-  height: 74px;
-  background-color: rgb(35, 116, 187);
-}

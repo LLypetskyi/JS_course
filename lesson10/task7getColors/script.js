@@ -4,17 +4,29 @@
 
 const button = document.querySelector('button');
 const fon = document.querySelector('wrapper');
-const element = document.getElementsByClassName('cub');
+const elements = document.querySelector('.cub');
 
-button.addEventListener('click',() =>{
+// функція рандомайзер кольору
+function randomColor() {
   let color = '#';
   color += Math.random().toString(16).slice(2,8);
   console.log(color);
-  for (let i=1; i<=element.length; i++){
-  element[i] = color;
-  }
-  });
+}
+
+
+button.addEventListener('click', randomColor()); //прикліку змінється код кольору
+elements.style.background-color = function randomColor(); // Функція підбору кольору
+
+// for (let elem of elements ){}
+//   // for (let i=1; i<=element.length; i++){
+//   // element(бекшраундКолор) = color;
+//   // }}
+  
 
 
 
   // button.addEventListener("click", function(){ alert("Hello World!"); }); 
+// добавляємо в css колір бекраунду
+  // elements.style.background-color = function randomColor(); // Функція підбору кольору
+
+
