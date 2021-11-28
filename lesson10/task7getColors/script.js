@@ -1,35 +1,48 @@
-//  Створити функцію, яка видає 10 рандомних кольорів користувачу. 
-// Поміщає їх в блоки. Користувач має обрати колір на клік. 
+//  Створити функцію, яка видає 10 рандомних кольорів користувачу.
+// Поміщає їх в блоки. Користувач має обрати колір на клік.
 // І після того комп'ютер показує який колір був вибраний
 
-const button = document.querySelector('button');
-const fon = document.querySelector('wrapper');
-const elements = document.querySelector('.cub');
+const button = document.querySelector(".button");
+const fonBody = document.body;
+const elements = document.getElementsByClassName("cub");
 
-
-// function for to get random color
-function randomColor() {
-  let color = '#';
-  color += Math.random().toString(16).slice(2,8);
-  console.log(color);
-};
+// console.log (button);
+// console.log (fon);
+// console.log (elements);
 
 // then we click on button we change color
-let newColor = button.addEventListener('click', randomColor);
+let newColor = button.addEventListener("click", setRandonColor);
 
-
-// маємо пройти по всіх div з класом cub і задати стиль бекграунду 
-for (let elem of elements){ 
-//  добавляємо в css колір бекраунду
-elements.style.backgroundColor = 'red'; // Функція підбору кольору
-console.log (elements.style.backgroundColor);
+// function for to get random color
+function createRandomColor() {
+  let color = "#";
+  color += Math.random().toString(16).slice(2, 8);
+  return color;
+  // console.log(color);
 }
 
+// function setRandonColor() {
+//   // маємо пройти по всіх div з класом cub і задати стиль бекграунду
+//   for (let elem of elements) {
+//     elem.style.background = createRandomColor(); //  добавляємо в css кожному <div> колір бекраунду
+//     fonBody.style.background = createRandomColor();
+//     console.log(elem.style.background);
+//   }
+// }
 
-//   // element(бекшраундКолор) = color;
-//   // }}
-  
-
-
-
-
+function setRandonColor() {
+  let gradient = 'linear-gradient(';
+  // маємо пройти по всіх div з класом cub і задати стиль бекграунду
+  for (let elem of elements) {
+    elem.style.background = createRandomColor(); //  добавляємо в css кожному <div> колір бекраунду
+    gradient = gradient + elem.style.background + ',' + ' ';  
+    // gradient = gradient + ')';
+    // fonBody.style.background = gradient;
+    // console.log(elem.style.background);
+    // console.log(gradient);
+  }
+  gradient = gradient + ')'+ ';';
+  console.log(gradient);
+  fonBody.style.background = gradient;
+  console.log (typeof(gradient));
+}
