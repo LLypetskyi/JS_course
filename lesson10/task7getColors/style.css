@@ -6,10 +6,16 @@
 html {
   height: 100%;
 }
-
 body {
   height: 100%;
-  background: none;
+  /* background: none; */
+}
+
+
+.body {
+  height: 100%;
+  /* background: none; */
+  font-style: italic;
 }
 
 
@@ -18,7 +24,7 @@ body {
   display: flex;
   align-items: flex-start;
   justify-content: center;
-  background: none;
+  /* background: none; */
 }
 
 .button {
