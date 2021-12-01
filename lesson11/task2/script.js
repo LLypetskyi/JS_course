@@ -15,21 +15,23 @@ let user = {
     street: "Striyska",
     building: "204",
     room: 44,
-  }
+  },
   cellFone: "0978497686",
   mail: "liubomyr.lypetskyi@gmail.com",
   "driver's license": true,
   education: "Master of Economics",
+  showInfoAboutUser: function showInfoAboutUser() {
+    console.log(this.name, this.surname, this.cellFone, this.mail);
+  },
 };
 
 console.info(user);
 
-let copyUser = {};
-// Створюєм функцію для копіювання одного ОБ'ЄКТА В ІНШИЙ
-let function createUserCopy(user, copyUser) {
-  for (let key in user) {
-    
-  }
+user.showInfoAboutUser();
 
+// let copyUser = {};
+// // Створюєм функцію для копіювання одного ОБ'ЄКТА В ІНШИЙ
+// let function createUserCopy(user, copyUser) {
+//   for (let key in user) {
 
-}
+//   }
