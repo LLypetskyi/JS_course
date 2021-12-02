@@ -10,9 +10,11 @@ let user = {
   married: true,
   children: true,
   adress: {
-    cityIndex: "79000",
-    city: "Lviv",
-    street: "Striyska",
+    city: {
+      cityName: "Lviv",
+      cityStreet: "Striyska",
+      cityIndex: "79000",
+    },
     building: "204",
     room: 44,
   },
