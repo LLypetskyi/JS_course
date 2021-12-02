@@ -9,31 +9,21 @@ let user = {
   sex: "male",
   married: true,
   children: true,
-  city: "Lviv",
-  street: "Striyska",
-  cityIndex: "79000",
-  building: "204",
-  room: 44,
+  adress: {
+    city: "Lviv",
+    street: "Striyska",
+    cityIndex: "79000",
+    building: "204",
+    room: 44,
+  },
   cellFone: "0978497686",
   mail: "liubomyr.lypetskyi@gmail.com",
   "driver's license": true,
   education: "Master of Economics",
 };
 
-let copyUser = {};
+let copyUser = Object.assign({}, user);
 
-// // Створюєм функцію для копіювання одного ОБ'ЄКТА В ІНШИЙ за допомогою циклу for (in)
-// function createUserCopy(user, copyUser) {
-//   for (let key in user) {
-//     copyUser.key = user.key;
-//     copyUser[key] = user[key];
-//     // return copyUser;
-//   }
-// }
-
-var copy = Object.assign(copyUser, user);
-
-// createUserCopy(user, copyUser);
 copyUser.age = 47;
 console.log("this is the original object- user", user);
 console.log(" ----------------------------------");
