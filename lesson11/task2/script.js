@@ -9,22 +9,15 @@ let user = {
   sex: "male",
   married: true,
   children: true,
-  adress: {
-    city: {
-      cityName: "Lviv",
-      cityStreet: "Striyska",
-      cityIndex: "79000",
-    },
-    building: "204",
-    room: 44,
-  },
+  city: "Lviv",
+  street: "Striyska",
+  cityIndex: "79000",
+  building: "204",
+  room: 44,
   cellFone: "0978497686",
   mail: "liubomyr.lypetskyi@gmail.com",
   "driver's license": true,
   education: "Master of Economics",
-  showInfoAboutUser: function showInfoAboutUser() {
-    console.log(this.name, this.surname, this.cellFone, this.mail);
-  },
 };
 
 let copyUser = {};
@@ -34,7 +27,7 @@ function createUserCopy(user, copyUser) {
   for (let key in user) {
     copyUser.key = user.key;
     copyUser[key] = user[key];
-    return copyUser;
+    // return copyUser;
   }
 }
 
@@ -42,7 +35,8 @@ createUserCopy(user, copyUser);
 copyUser.age = 47;
 console.log("this is the original object- user", user);
 console.log(" ----------------------------------");
-console.log("this is new clone of user- copyUser", copyUser);
-console.log("this is some info of original object- user");
-user.showInfoAboutUser();
+console.log(
+  "this is new clone of user- copyUser with a changed value of age",
+  copyUser
+);
 console.log(" ----------------------------------");
