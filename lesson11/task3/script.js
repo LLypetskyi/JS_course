@@ -1,5 +1,3 @@
-// // Створіть функцію, яка додає 3 цифри і виводить результат в перемінну, в консоль, в алерт
-
 console.log(" ----------------------------------");
 
 let user = {
@@ -23,7 +21,6 @@ let user = {
 };
 
 let copyUser = Object.assign({}, user);
-
 copyUser.age = 47;
 console.log("this is the original object- user", user);
 console.log(" ----------------------------------");

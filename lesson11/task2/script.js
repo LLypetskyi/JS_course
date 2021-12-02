@@ -1,5 +1,3 @@
-// // Створіть функцію, яка додає 3 цифри і виводить результат в перемінну, в консоль, в алерт
-
 console.log(" ----------------------------------");
 
 let user = {
@@ -22,18 +20,17 @@ let user = {
 
 let copyUser = {};
 
-// // Створюєм функцію для копіювання одного ОБ'ЄКТА В ІНШИЙ за допомогою циклу for (in)
-// function createUserCopy(user, copyUser) {
-//   for (let key in user) {
-//     copyUser.key = user.key;
-//     copyUser[key] = user[key];
-//     // return copyUser;
-//   }
-// }
+// Створюєм функцію для копіювання одного ОБ'ЄКТА В ІНШИЙ за допомогою циклу for (in)
+function createUserCopy(user, copyUser) {
+  for (let key in user) {
+    copyUser.key = user.key;
+    copyUser[key] = user[key];
+    // return copyUser;
+  }
+}
 
-var copy = Object.assign(copyUser, user);
+createUserCopy(user, copyUser);
 
-// createUserCopy(user, copyUser);
 copyUser.age = 47;
 console.log("this is the original object- user", user);
 console.log(" ----------------------------------");
