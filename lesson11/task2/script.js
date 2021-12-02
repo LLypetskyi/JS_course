@@ -25,13 +25,22 @@ let user = {
   },
 };
 
-console.info(user);
+let copyUser = {};
 
+// Створюєм функцію для копіювання одного ОБ'ЄКТА В ІНШИЙ за допомогою циклу for (in)
+function createUserCopy(user, copyUser) {
+  for (let key in user) {
+    copyUser.key = user.key;
+    copyUser[key] = user[key];
+    return copyUser;
+  }
+}
+
+createUserCopy(user, copyUser);
+copyUser.age = 47;
+console.log("this is the original object- user", user);
+console.log(" ----------------------------------");
+console.log("this is new clone of user- copyUser", copyUser);
+console.log("this is some info of original object- user");
 user.showInfoAboutUser();
-
-// let copyUser = {};
-// // Створюєм функцію для копіювання одного ОБ'ЄКТА В ІНШИЙ
-// let function createUserCopy(user, copyUser) {
-//   for (let key in user) {
-
-//   }
+console.log(" ----------------------------------");
