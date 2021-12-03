@@ -39,8 +39,11 @@ function copyObject(object) {
       rezObject[key] = copyObject(object[key]);
     }
   }
-
   return rezObject;
 }
 
+console.log("this is the original object- user", user);
+console.log(" ----------------------------------");
+console.log("this is new clone of user- copyUser with a changed value of age");
 console.log(copyObject(user));
+console.log(" ----------------------------------");
