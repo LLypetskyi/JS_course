@@ -19,13 +19,10 @@ let user = {
 };
 
 let copyUser = {};
-
 // Створюєм функцію для копіювання одного ОБ'ЄКТА В ІНШИЙ за допомогою циклу for (in)
 function createUserCopy(user, copyUser) {
   for (let key in user) {
-    copyUser.key = user.key;
     copyUser[key] = user[key];
-    // return copyUser;
   }
 }
 
