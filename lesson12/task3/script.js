@@ -18,7 +18,7 @@ function returnClearArray(inputArray, number) {
   return outputArray;
 }
 
-const inputArray = [1, 3, 5, 3, 2, 6, 3, "ghg"];
+const inputArray = [1, 3, 5, 3, 2, 6, 3];
 const number = +prompt("Введіть небажане число :) ?");
 
 console.log("this is the original input array ", inputArray);
