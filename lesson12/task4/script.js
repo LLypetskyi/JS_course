@@ -4,23 +4,19 @@
 // має стати  [1, 3, 5, 2, 6].
 // Для тестування буду пробувати масиви з різними типами даних і різною довжиною
 
-// Усі ф-ції в дз мають бути чисті та зберігати вхідний масив і утворюють новий результуючий масив
-//  НЕ ПРАЦЮЄ ПОКИ :)
+// Варіант 1 через filter
+const inputArrayOne = [1, 3, 5, 3, 2, 6, 3, 6, 2];
 
-function returnClearArray(inputArray) {
-  const outputArray = [];
-  inputArray.sort();
-  // console.log(inputArray);
-  for (const item of inputArray) {
-    if (item[0] !== item[1]) {
-      outputArray.push(item[0]); //додаєм перший елемент в рез масив
-      // inputArray.shift(); //видаляєм перший елемент з вхідного масиву
-    }
-  }
-  return outputArray;
-}
+let resultArrayOne = inputArrayOne.filter(
+  (item, index) => inputArrayOne.indexOf(item) === index
+);
+console.log("version #2 with method filter");
+console.log("this is the original input array ", inputArrayOne);
+console.log("this is the result array ", resultArrayOne);
 
-const inputArray = [1, 3, 5, 3, 2, 6, 3, 6, 2];
-
-console.log("this is the original input array ", inputArray);
-console.log("this is the result array ", returnClearArray(inputArray));
+// Варіант 2 через Set
+const inputArrayTwo = [1, 3, 5, 3, 2, 6, 3, 6, 2];
+let resultArrayTwo = Array.from(new Set(inputArrayTwo));
+console.log("version #2 with method Set");
+console.log("this is the original input array ", inputArrayTwo);
+console.log("this is the result array ", resultArrayTwo);
