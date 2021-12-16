@@ -1,9 +1,3 @@
-// Завдання 1
-// Реалізувати функцію useCollection
-// яка буде повертати функції
-// з допомогою якої ви можете дістати обєкт
-// колекції яку ви вибрали
-
 const DB = {
   collections: {
     posts: {
@@ -28,42 +22,16 @@ const DB = {
     },
   },
 };
-//1
-// function useCollection(collectionName) {
-//   return function (id) {
-//     return DB.collections[collectionName][id];
-//   };
-// }
 
-// const getPostItem = useCollection("posts");
-// console.log(getPostItem("posts_1"));
+//Завдання 1 Реалізувати функцію useCollection яка буде повертати
+//  функцію з допомогою якої ви можете дістати обєкт з вибраної колекції
 
-//2
 function useCollection(collectionName) {
-  if (!DB.collections[collectionName]) {
-    DB.collections[collectionName] = {};
-  }
-  return {
-    get: function (id) {
-      return DB.collections[collectionName][id];
-    },
-    create: function (id, data) {
-      DB.collections[collectionName][id] = data;
-    },
-
-    edit: function (id, data) {
-      this.create(id, data);
-    },
-    deleteOne: function (id) {
-      delete DB.collections[collectionName][id];
-    },
+  return function (id) {
+    return DB.collections[collectionName][id];
   };
 }
 
-// const collection = useCollection("posts");
-// console.log(collection.get("posts_1"));
-
-const collection = useCollection("posts");
-collection.create("posts_3", { name: "some name", text: "some text" });
-
-console.log(collection.get("posts_3"));
+const getPostItem = useCollection("comments");
+console.log("Ф-ція котра повертає об'єкт =>", getPostItem);
+console.log("Результуючий об'єкт => ", getPostItem("comment_2"));
