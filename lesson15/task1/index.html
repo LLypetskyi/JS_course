@@ -10,23 +10,18 @@
 </head>
 
 <body>
-    <div class="wrapper">
-        <div class="header">
-            <img> Картинка "погода" </img>
-        </div>
+    <div class="forecast">
+        <h2>Погода в місті - <span class="city"></span></h2>
+        <h4>Сьогодні: <span class="date"></span></h4>
+        <h4>Температура повітря: <span class="temp"></span>°C</h4>
+        <h4>Вологість повітря: <span class="humidity"> </span> %</h4>
+        <h4>Хмарність : <span class="clouds"> </span> % </h4>
+        <p class="image"> </p>
 
-        <div class="footer">
-            <div class="class left">
-                <img> температура повітря (в метричній системі),
-                -”хмарність”(response -> weather -> main)
-                - місто" </img>
-            </div>
-            <div class="class right">
-                <img> Картинка "Дата" </img>
-            </div>
-        </div>
 
-        <script src="./script.js"></script>
+    </div>
+
+    <script src="./script.js"></script>
 </body>
 
 </html>
