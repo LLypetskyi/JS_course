@@ -14,15 +14,38 @@ async function getForecast() {
   let currMonth = todayDate.getMonth() + 1;
   let currDay = todayDate.getDate();
   let rezDate = currDay + '-' + currMonth + '-' + currYear;
-
   document.querySelector('.date').innerHTML = rezDate;
 
-  // // вивід іконки
-  // // https://openweathermap.org/img/wn/04n@2x.png
+  function createCardElement(data) {
+    const div = document.createElement('div');
+    let cardTemplate = `<div class="card">
+                <div class="icon"></div>
+                <div> Станом на: <span class="time">${data.dt_txt}</span> </div>
+                <div>Температура повітря: <span class="temp"> </span> °C</div>
+                <div>Вологість повітря: <span class="humidity"> </span> %</div>
+                <div>Хмарність : <span class="clouds"> </span> %</div>
+            </div>`;
+    div.innerHTML = cardTemplate.trim();
+    return div.firstChild;
+  }
 
-  // document.querySelector(
-  //   '.image'
-  // ).innerHTML = `<img src="https://openweathermap.org/img/wn/${contentResponce.weather[0]['icon']}@2x.png">`;
+  function addCardToPage(cardElement, cardsContainer) {
+    cardsContainer.appendChild(cardElement);
+  }
+
+  function isThreeOclock(dateTime) {
+    const time = dateTime.substr(11);
+    return time === '15:00:00';
+  }
+
+  const threeOclockItems = contentResponce.list.filter((dataItem) =>
+    isThreeOclock(dataItem.dt_txt)
+  );
+
+  for (const dataItem of threeOclockItems) {
+    let cardElement = createCardElement(dataItem);
+    addCardToPage(cardElement, document.querySelector('.nav'));
+  }
 }
 
 getForecast();

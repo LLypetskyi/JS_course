@@ -1,17 +1,31 @@
-* {
-  margin: 0;
-  padding: 0;
-}
-
-.forecast {
-  background-image: url(https://ireland.apollo.olxcdn.com/v1/files/hmayaqmpmif73-UA/image;s=1000x570);
-  background-repeat: no-repeat;
-  height: 300px;
-  width: 450px;
+.wijet{
+  width: 900px;
+  display: flex;
   border-radius: 25px;
-  padding: 15px;
-  font-family: 'Courier New', Courier, monospace;
-  font-size: 25px;
+  font-family: serif;
+  text-align: center;
+  background-image: url(https://cdn.crello.com/api/media/small/291166132/stock-vector-water-splesh-and-bokeh-background);
+  flex-direction: column;
 }
 
+.city {
+  font-size: 40px;
+  margin-top: 15px;
+}
 
+/* .date {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+} */
+
+.nav{
+  display: flex;
+}
+.card {
+  border: 2px solid white;
+}
+
+.card:hover {
+  box-shadow: 0 0 7px black;
+}
