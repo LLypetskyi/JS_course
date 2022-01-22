@@ -15,17 +15,17 @@ async function getWeather() {
 
   // // вивід поточної дати
   document.querySelector('.date').innerHTML = rezDate;
-  // // вивід температури повітря
+  // // // вивід температури повітря
   document.querySelector('.temp').innerHTML = contentResponce.main.temp;
-  // // вивід вологості повітря
+  // // // вивід вологості повітря
   document.querySelector('.humidity').innerHTML = contentResponce.main.humidity;
-  // // вивід хмарності
+  // // // вивід хмарності
   document.querySelector('.clouds').innerHTML = contentResponce.clouds.all;
-  // // вивід іконки
-  // https://openweathermap.org/img/wn/04n@2x.png
+  // // // вивід іконки
+  // // https://openweathermap.org/img/wn/04n@2x.png
 
   document.querySelector(
-    '.image'
+    '.icon'
   ).innerHTML = `<img src="https://openweathermap.org/img/wn/${contentResponce.weather[0]['icon']}@2x.png">`;
 }
 
