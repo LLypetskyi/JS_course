@@ -25,10 +25,18 @@ async function getForecast() {
     const div = document.createElement('div');
     let cardTemplate = `<div class="card">
         <div> Станом на: <span class="time">${data.dt_txt}</span> </div>
-        <div>Температура повітря: <span class="temp">${data.main.temp} </span> °C</div>
-        <div>Відчувається як: <span class="temp">${data.main.feels_like} </span> °C</div>
-        <div>Вологість повітря: <span class="humidity">${data.main.humidity} </span> %</div>
-        <div>Хмарність : <span class="clouds">${data.clouds.all} </span> %</div>  
+        <div>Температура повітря: <span class="temp">${Math.round(
+          data.main.temp
+        )}</span> °C</div>
+        <div>Відчувається як: <span class="temp">${Math.round(
+          data.main.feels_like
+        )} </span> °C</div>
+        <div>Вологість повітря: <span class="humidity">${
+          data.main.humidity
+        } </span> %</div>
+        <div>Хмарність : <span class="clouds">${
+          data.clouds.all
+        } </span> %</div>  
         </div>`;
     div.innerHTML = cardTemplate.trim();
     return div.firstChild;
