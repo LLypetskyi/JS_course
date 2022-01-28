@@ -1,0 +1,34 @@
+.card {
+  width: 500px;
+  display: flex;
+  border-radius: 25px;
+  font-family: serif;
+  text-align: center;
+  background-image: url(https://cdn.crello.com/api/media/small/291166132/stock-vector-water-splesh-and-bokeh-background);
+  flex-direction: column;
+}
+.city {
+  font-size: 40px;
+  margin-top: 15px;
+}
+
+.date {
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+.icon {
+  width: 150px;
+  height: 150px;
+  margin: 0 auto 20px;
+}
+
+.indication {
+  display: flex;
+  justify-content: center;
+  align-items: baseline;
+  font-size: 15px;
+  flex-direction: row;
+}
+

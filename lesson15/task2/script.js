@@ -41,7 +41,7 @@ async function getForecast() {
     div.innerHTML = cardTemplate.trim();
     return div.firstChild;
   }
-  // ф-ція для додвання карточки на сторінку
+  // ф-ція для додавання карточки на сторінку
   function addCardToPage(cardElement, cardsContainer) {
     cardsContainer.appendChild(cardElement);
   }
