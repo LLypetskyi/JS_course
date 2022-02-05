@@ -22,6 +22,16 @@
   color: grey;
 }
 
+#addNewPost {
+  margin: 20px;
+}
+
+#titleInput,
+#descInput {
+  width: 100%;
+}
+
 .button {
   background-color: dodgerblue;
+   
 }
