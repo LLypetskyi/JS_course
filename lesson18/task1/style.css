@@ -1,3 +1,15 @@
+h1{
+  text-align: center;
+}
+
+#battlefield {
+  width: 450px;
+  height: 450px;
+  background-color: lightseagreen;
+  display: flex;
+  flex-wrap: wrap;
+}
+
 .wrapper{
 width: 100%;
 height: 100%;
@@ -6,18 +18,14 @@ justify-content: center;
 align-items: center;
 }
 
-#battlefield{
-  width: 450px;
-  height: 450px;
-  background-color: lightseagreen;
-  display: flex;
-  flex-wrap: wrap;
-}
-
 .field{
-  width: 150px;
-  height: 150px;
-  border: 2px solid darkcyan;
-  box-sizing: border-box;
-
+ width: 150px;
+height: 150px;
+border: 2px solid darkcyan;
+box-sizing: border-box;
+color: dimgray;
+font-size: 140px;
+display: flex;
+justify-content: center;
+align-items: center;
 }
