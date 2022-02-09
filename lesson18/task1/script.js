@@ -15,7 +15,7 @@ let step = 0;
 // ];
 battlefield.addEventListener('click', (event) => {
   if ((event.target.className = 'field')) {
-    if (step % 2 === 0) {
+    if (step % 2 === 0 && event.target.innerHTML == '') {
       event.target.innerHTML = 'X';
     } else {
       event.target.innerHTML = '0';
