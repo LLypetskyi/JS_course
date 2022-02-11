@@ -19,7 +19,7 @@ align-items: center;
 }
 
 .field{
- width: 150px;
+width: 150px;
 height: 150px;
 border: 2px solid darkcyan;
 box-sizing: border-box;
@@ -28,4 +28,9 @@ font-size: 140px;
 display: flex;
 justify-content: center;
 align-items: center;
+te
+}
+
+.field:hover {
+  background-color: rgb(77, 192, 154);
 }
