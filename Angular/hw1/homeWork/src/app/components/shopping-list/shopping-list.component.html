@@ -2,19 +2,20 @@
   <strong>Task 1 part 4 "Shopping list".</strong>
 </p>
 
-<ul *ngFor='let a of arr' class='text'>
-  <li> {{a}} </li>
-  <div class='button'>
-    <button class='button'>Make Active</button>
-    <button class='button'> Make Bold</button>
-    <button class='button'>Add line</button>
+<ul>
+  <ng-container *ngFor="let item of items">
+    <li *ngIf="item" [class.makeActive]="makeActive" [class.makeBold]="makeBold" [class.addLine]="addLine">
+      {{item}}
+    </li>
+    <button (click)="makeActive = true" class='button'>Make Active</button>
+    <button (click)="makeBold = true" class='button'>Make Bold</button>
+    <button (click)="addLine = true" class='button'>Add line</button>
 
-    <button class='button'>Remove Active</button>
-    <button class='button'>Remove Bold</button>
-    <button class='button'>Remove line</button>
-  </div>
 
+    <button (click)="makeActive = false" class='button'>Remove Active</button>
+    <button (click)="makeBold = false" class='button'>Remove Bold</button>
+    <button (click)="addLine = false" class='button'>Remove line</button>
+  </ng-container>
 </ul>
-
 
 <hr>

@@ -3,17 +3,20 @@
     margin: 5px;
     background-color: aquamarine;
     border: 2px solid black;
+    
 }
 .text{
     font-size: 18px;
     font-style: italic;
 }
-.MakeActive{
+.makeActive{
+    background-color: greenyellow;
+    border: 2px sold black;
 
 }
-.MakeBold{
-
+.makeBold{
+    font-weight: bold;
 }
-.AddLine{
-
+.addLine{
+text-decoration: underline;
 }

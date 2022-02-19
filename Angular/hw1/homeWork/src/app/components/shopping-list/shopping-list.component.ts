@@ -6,8 +6,14 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./shopping-list.component.css']
 })
 export class ShoppingListComponent {
-arr: string [] = ['bread', 'butter', 'milk', 'kefir', 'cheese','fish', 'chicken', 'apples', 'bananas', 'candies']
+items: string [] = ['bread', 'butter', 'milk', 'kefir', 'cheese','fish', 'chicken', 'apples', 'bananas', 'candies']
+makeActive: boolean = false;
+makeBold: boolean = false;
+addLine: boolean = false;
 
+// removeActive: boolean = false;
+// removeBold: boolean = false;
+// removeLine: boolean = false;
   constructor() { }
 
   
