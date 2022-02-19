@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { AnyCatcher } from 'rxjs/internal/AnyCatcher';
 
 @Component({
   selector: 'app-shopping-list',
@@ -6,16 +7,68 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./shopping-list.component.css']
 })
 export class ShoppingListComponent {
-items: string [] = ['bread', 'butter', 'milk', 'kefir', 'cheese','fish', 'chicken', 'apples', 'bananas', 'candies']
-makeActive: boolean = false;
-makeBold: boolean = false;
-addLine: boolean = false;
 
-// removeActive: boolean = false;
-// removeBold: boolean = false;
-// removeLine: boolean = false;
-  constructor() { }
+items:any = [
+{name: "bread",
+makeActive: false,
+makeBold:  false,
+addLine: false},
 
-  
+{name: "butter",
+makeActive: false,
+makeBold:  false,
+addLine: false},
+
+{name: "milk",
+makeActive: false,
+makeBold:  false,
+addLine: false},
+
+{name: "efir",
+makeActive: false,
+makeBold:  false,
+addLine: false},
+
+{name: "kefir",
+makeActive: false,
+makeBold:  false,
+addLine: false},
+
+{name: "cheese",
+makeActive: false,
+makeBold:  false,
+addLine: false},
+
+{name: "fish",
+makeActive: false,
+makeBold:  false,
+addLine: false},
+
+{name: "chicken",
+makeActive: false,
+makeBold:  false,
+addLine: false},
+
+{name: "apples",
+makeActive: false,
+makeBold:  false,
+addLine: false},
+
+{name: "bananas",
+makeActive: false,
+makeBold:  false,
+addLine: false},
+
+{name: "candies",
+makeActive: false,
+makeBold:  false,
+addLine: false},
+]
+// makeActive: boolean = false;
+// makeBold: boolean = false;
+// addLine: boolean = false;
+
+constructor() { }
+ 
 
 }

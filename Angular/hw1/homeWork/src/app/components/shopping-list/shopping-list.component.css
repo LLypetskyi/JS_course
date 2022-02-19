@@ -10,9 +10,9 @@
     font-style: italic;
 }
 .makeActive{
+    width: 150px;
     background-color: greenyellow;
     border: 2px sold black;
-
 }
 .makeBold{
     font-weight: bold;

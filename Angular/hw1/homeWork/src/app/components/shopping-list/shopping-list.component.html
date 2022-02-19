@@ -4,17 +4,18 @@
 
 <ul>
   <ng-container *ngFor="let item of items">
-    <li *ngIf="item" [class.makeActive]="makeActive" [class.makeBold]="makeBold" [class.addLine]="addLine">
-      {{item}}
+    <li *ngIf="item" [class.makeActive]="item.makeActive" [class.makeBold]="item.makeBold"
+      [class.addLine]="item.addLine">
+      {{item.name}}
     </li>
-    <button (click)="makeActive = true" class='button'>Make Active</button>
-    <button (click)="makeBold = true" class='button'>Make Bold</button>
-    <button (click)="addLine = true" class='button'>Add line</button>
+    <button *ngIf="!item.makeActive" (click)="item.makeActive = true" class='button'>Make Active</button>
+    <button *ngIf="!item.makeBold" (click)="item.makeBold = true" class='button'>Make Bold</button>
+    <button *ngIf="!item.addLine" (click)="item.addLine = true" class='button'>Add line</button>
 
 
-    <button (click)="makeActive = false" class='button'>Remove Active</button>
-    <button (click)="makeBold = false" class='button'>Remove Bold</button>
-    <button (click)="addLine = false" class='button'>Remove line</button>
+    <button *ngIf="item.makeActive" (click)="item.makeActive = false" class='button'>Remove Active</button>
+    <button *ngIf="item.makeBold" (click)="item.makeBold = false" class='button'>Remove Bold</button>
+    <button *ngIf="item.addLine" (click)="item.addLine = false" class='button'>Remove line</button>
   </ng-container>
 </ul>
 
