@@ -1,9 +1,9 @@
 .block{
     border: 2px solid green;
-    width: 100px;
-    height: 50px;
+    width: 200px;
     margin-bottom: 20px;
     text-align: center;
+    box-sizing: border-box;
 }
 .button{
     margin: 10px;

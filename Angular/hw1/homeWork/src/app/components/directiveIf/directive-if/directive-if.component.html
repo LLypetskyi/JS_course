@@ -1,5 +1,11 @@
-<p> <strong>Task 3. *ngIf</strong></p>
-<div class='block'> Some image </div>
+<p> <strong>Task 1 part 3. *ngIf</strong></p>
+<div *ngIf="showImage" class='block'>
+  <img
+    src="https://upload.wikimedia.org/wikipedia/en/thumb/3/3b/SpongeBob_SquarePants_character.svg/640px-SpongeBob_SquarePants_character.svg.png"
+    alt="SpongeBob" width='200px' height='200px'>
+</div>
 
-<button type='button' class='button'>SHOW</button>
-<button type='button' class='button'>HIDE</button>
+<button (click)="showImage = true" type='button' class='button'>SHOW</button>
+<button (click)="showImage = false" type='button' class='button'>HIDE</button>
+
+<hr>

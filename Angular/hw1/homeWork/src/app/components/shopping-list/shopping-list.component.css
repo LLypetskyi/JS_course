@@ -1,0 +1,19 @@
+.button {
+    display: flex;
+    margin: 5px;
+    background-color: aquamarine;
+    border: 2px solid black;
+}
+.text{
+    font-size: 18px;
+    font-style: italic;
+}
+.MakeActive{
+
+}
+.MakeBold{
+
+}
+.AddLine{
+
+}
