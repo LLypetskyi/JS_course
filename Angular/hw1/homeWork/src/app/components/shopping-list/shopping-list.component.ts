@@ -64,11 +64,7 @@ makeActive: false,
 makeBold:  false,
 addLine: false},
 ]
-// makeActive: boolean = false;
-// makeBold: boolean = false;
-// addLine: boolean = false;
 
 constructor() { }
- 
 
 }

@@ -14,7 +14,4 @@ export class PipeComponent {
   upperCaseStr = 'hello from parent component'
   lowerCaseStr = 'HELLO FROM PARENT COMPONENT'
   sliceStr = 'цю стрінгу потрібно обрізати'
-
-
-
 }

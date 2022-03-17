@@ -1,7 +1,6 @@
 <p>
   <strong>Task 1 part 4 "Shopping list".</strong>
 </p>
-
 <ul>
   <ng-container *ngFor="let item of items">
     <li *ngIf="item" [class.makeActive]="item.makeActive" [class.makeBold]="item.makeBold"
@@ -12,11 +11,9 @@
     <button *ngIf="!item.makeBold" (click)="item.makeBold = true" class='button'>Make Bold</button>
     <button *ngIf="!item.addLine" (click)="item.addLine = true" class='button'>Add line</button>
 
-
     <button *ngIf="item.makeActive" (click)="item.makeActive = false" class='button'>Remove Active</button>
     <button *ngIf="item.makeBold" (click)="item.makeBold = false" class='button'>Remove Bold</button>
     <button *ngIf="item.addLine" (click)="item.addLine = false" class='button'>Remove line</button>
   </ng-container>
 </ul>
-
 <hr>
