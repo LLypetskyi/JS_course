@@ -11,8 +11,9 @@ import { PlanningComponent} from './planning/planning.component';
 import { SoilComponent } from './soil/soil.component';
 import { NotFoundComponent } from './not-found/not-found.component';
 
+
 const appRoutes: Routes =[
-  {path: '', component: DashboardComponent },
+  {path: '', component: DashboardComponent  },
   {path: 'dashboard', component: DashboardComponent },
   {path: 'cropping', component: CroppingComponent},
   {path: 'mapsAndAnalysis', component: MapsAndAnalysisComponent},
@@ -29,7 +30,7 @@ const appRoutes: Routes =[
     MapsAndAnalysisComponent,
     PlanningComponent,
     SoilComponent,
-    NotFoundComponent
+    NotFoundComponent,
   ],
   imports: [
     BrowserModule,

@@ -1,0 +1,23 @@
+<p>parent works!</p>
+
+<ng-container *ngTemplateOutlet="first"></ng-container>
+
+<div *ngIf="image; else dif">
+
+  <ng-template #first>
+    <div>
+      <img
+        src="https://upload.wikimedia.org/wikipedia/en/thumb/3/3b/SpongeBob_SquarePants_character.svg/640px-SpongeBob_SquarePants_character.svg.png"
+        alt="SpongeBob" width='300px' height='300px'>
+    </div>
+  </ng-template>
+
+
+  <ng-template #dif>
+    <div>
+      <img src="https://static2.raru.co.za/cover/2016/05/26/4567612-l.jpg?v=1464217200" alt="batman small image"
+        width='300px' height='300px'>
+    </div>
+  </ng-template>
+
+  <button (click)="image = !image">Change image</button>
