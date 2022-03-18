@@ -9,7 +9,7 @@ export class ParentComponent implements OnInit {
 
   constructor() { }
   
-  image = true;
+  image = false;
  
   ngOnInit(): void {
   }
